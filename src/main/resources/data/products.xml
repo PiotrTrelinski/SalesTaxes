@@ -1,5 +1,22 @@
-<product>
-	<name> </name>
-	<category> </category>
-	<price> </price>
-</product>
+<products>	
+	<product>
+		<name>Jacket</name>
+		<category>Clothing</category>
+		<price>130</price>
+	</product>
+	<product>
+		<name>Suit Blazer</name>
+		<category>Clothing</category>
+		<price>63</price>
+	</product>
+	<product>
+		<name>Cardigan</name>
+		<category>Clothing</category>
+		<price>25</price>
+	</product>
+	<product>
+		<name>Dress</name>
+		<category>Clothing</category>
+		<price>49</price>
+	</product>
+</products>
