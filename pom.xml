@@ -24,7 +24,7 @@
                 <configuration>
 
                     <!-- executable JAR file is built by default (not optional at this stage) -->
-                    <mainClass>com.zenjava.examples.hellojfxmaven.HelloJavaFxAndMavenApp</mainClass>
+                    <mainClass>HelloJavaFxAndMavenApp</mainClass>
 
                     <!-- optionally override settings (such as jar file name, html file, etc) -->
                     <jarFileName>my-example-app.jar</jarFileName>
