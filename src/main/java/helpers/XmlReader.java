@@ -9,8 +9,12 @@ import org.w3c.dom.NodeList;
 
 public class XmlReader {
 	
+	public XmlReader(String path) {
+		this.fileName=path;
+	}
+	
 	private String fileName;
-	NodeList nList;
+	private NodeList statesList;
 	
 	public void read() throws Exception {
 		try {
@@ -19,12 +23,15 @@ public class XmlReader {
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(fXmlFile);
 			doc.getDocumentElement().normalize();
-			nList = doc.getElementsByTagName("state");
-		
+			statesList = doc.getElementsByTagName("state");
 		}
 		catch (Exception e) {
 			throw e;
 		}
+	}
+
+	public NodeList getStatesList() {
+		return statesList;
 	}
 
 }
