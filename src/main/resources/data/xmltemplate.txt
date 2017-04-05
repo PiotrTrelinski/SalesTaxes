@@ -1,0 +1,12 @@
+<state>
+	<name> </name>
+	<basetax> </basetax>
+	<maxsurtax> </maxsurtax>
+	<groceries> </groceries>
+	<preparedfood> </preparedfood>
+	<prescriptiondrug> </prescriptiondrug>
+	<nonprescriptiondrug> </nonprescriptiondrug>
+	<clothing> </clothing>
+</state>
+
+

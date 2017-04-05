@@ -1,0 +1,165 @@
+<state>
+	<name>Alabama</name>
+	<basetax>4%</basetax>
+	<maxsurtax>13.5%</maxsurtax>
+	<groceries>general</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Alaska</name>
+	<basetax>0%</basetax>
+	<maxsurtax>7%</maxsurtax>
+	<groceries>no</groceries>
+	<preparedfood>no</preparedfood>
+	<prescriptiondrug>no</prescriptiondrug>
+	<nonprescriptiondrug>no</nonprescriptiondrug>
+	<clothing>no</clothing>
+</state>
+
+<state>
+	<name>Arizona</name>
+	<basetax>5.6%</basetax>
+	<maxsurtax>10.725%</maxsurtax>
+	<groceries>exempt</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Arkansas</name>
+	<basetax>6.5%</basetax>
+	<maxsurtax>11.625%</maxsurtax>
+	<groceries>1.5%</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>California</name>
+	<basetax>7.25%</basetax>
+	<maxsurtax>9.75%</maxsurtax>
+	<groceries>exempt</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Connecticut</name>
+	<basetax>6.35%</basetax>
+	<maxsurtax>6.35%</maxsurtax>
+	<groceries>exempt</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>exempt</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Delaware</name>
+	<basetax>0%</basetax>
+	<maxsurtax>0%</maxsurtax>
+	<groceries>no</groceries>
+	<preparedfood>no</preparedfood>
+	<prescriptiondrug>no</prescriptiondrug>
+	<nonprescriptiondrug>no</nonprescriptiondrug>
+	<clothing>no</clothing>
+</state>
+
+<state>
+	<name>District of Columbia</name>
+	<basetax>5.75%</basetax>
+	<maxsurtax>5.75%</maxsurtax>
+	<groceries>exempt</groceries>
+	<preparedfood>10%</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>exempt</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Florida</name>
+	<basetax>6%</basetax>
+	<maxsurtax>7.5%</maxsurtax>
+	<groceries>exempt</groceries>
+	<preparedfood>9%</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Georgia</name>
+	<basetax>4%</basetax>
+	<maxsurtax>8%</maxsurtax>
+	<groceries>4%</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Guam</name>
+	<basetax>4%</basetax>
+	<maxsurtax>4%</maxsurtax>
+	<groceries>general</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>general</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Hawaii</name>
+	<basetax>4.166%</basetax>
+	<maxsurtax>4.712%</maxsurtax>
+	<groceries>general</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>general</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Idaho</name>
+	<basetax>6%</basetax>
+	<maxsurtax>8.5%</maxsurtax>
+	<groceries>general</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Illionis</name>
+	<basetax>6.25%</basetax>
+	<maxsurtax>10.25%</maxsurtax>
+	<groceries>1%</groceries>
+	<preparedfood>8.25%</preparedfood>
+	<prescriptiondrug>1%</prescriptiondrug>
+	<nonprescriptiondrug>1%</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Indiana</name>
+	<basetax>7%</basetax>
+	<maxsurtax>7%</maxsurtax>
+	<groceries>exempt</groceries>
+	<preparedfood>9%</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
