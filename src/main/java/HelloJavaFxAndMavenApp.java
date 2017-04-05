@@ -14,11 +14,11 @@ public class HelloJavaFxAndMavenApp extends Application {
     public void start(Stage stage) throws Exception {
 
 
-        String fxmlFile = "/fxml/hello.fxml";
+        String fxmlFile = "/fxml/hello2.fxml";
         FXMLLoader loader = new FXMLLoader();
         Parent rootNode = (Parent) loader.load(getClass().getResourceAsStream(fxmlFile));
 
-        Scene scene = new Scene(rootNode, 400, 200);
+        Scene scene = new Scene(rootNode, 600, 400);
         scene.getStylesheets().add("/styles/styles.css");
 
         stage.setTitle("Hello JavaFX and Maven");
