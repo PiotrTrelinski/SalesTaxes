@@ -163,3 +163,57 @@
 	<clothing>general</clothing>
 </state>
 
+<state>
+	<name>Iowa</name>
+	<basetax>6%</basetax>
+	<maxsurtax>7%</maxsurtax>
+	<groceries>exempt</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Kansas</name>
+	<basetax>6.5%</basetax>
+	<maxsurtax>10.15%</maxsurtax>
+	<groceries>general</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>general</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Kentucky</name>
+	<basetax>6%</basetax>
+	<maxsurtax>6%</maxsurtax>
+	<groceries>exempt</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Louisiana</name>
+	<basetax>5%</basetax>
+	<maxsurtax>12%</maxsurtax>
+	<groceries>7%</groceries>
+	<preparedfood>general</preparedfood>
+	<prescriptiondrug>general</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
+
+<state>
+	<name>Maine</name>
+	<basetax>5.5%</basetax>
+	<maxsurtax>5.5%</maxsurtax>
+	<groceries>exempt</groceries>
+	<preparedfood>7%</preparedfood>
+	<prescriptiondrug>exempt</prescriptiondrug>
+	<nonprescriptiondrug>general</nonprescriptiondrug>
+	<clothing>general</clothing>
+</state>
