@@ -19,4 +19,49 @@
 		<category>Clothing</category>
 		<price>49</price>
 	</product>
+	<product>
+		<name>Lisinopril</name>
+		<category>Prescription drug</category>
+		<price>7.66</price>
+	</product>
+	<product>
+		<name>Hydrochlorothiazide</name>
+		<category>Prescription drug</category>
+		<price>8.45</price>
+	</product>
+	<product>
+		<name>Azithromycin</name>
+		<category>Prescription drug</category>
+		<price>9.89</price>
+	</product>
+	<product>
+		<name>Amoxicillin</name>
+		<category>Prescription drug</category>
+		<price>5.65</price>
+	</product>
+	<product>
+		<name>Synthroid</name>
+		<category>Prescription drug</category>
+		<price>37.99</price>
+	</product>
+	<product>
+		<name>Advil</name>
+		<category>Non-prescription drug</category>
+		<price>8.98</price>
+	</product>
+	<product>
+		<name>Motrin</name>
+		<category>Non-prescription drug</category>
+		<price>12.96</price>
+	</product>
+	<product>
+		<name>Aleve</name>
+		<category>Non-prescription drug</category>
+		<price>14.92</price>
+	</product>
+	<product>
+		<name>Colace</name>
+		<category>Non-prescription drug</category>
+		<price>13.97</price>
+	</product>
 </products>
