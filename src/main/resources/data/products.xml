@@ -64,4 +64,35 @@
 		<category>Non-prescription drug</category>
 		<price>13.97</price>
 	</product>
+	<product>
+		<name>Pizza</name>
+		<category>Prepared food</category>
+		<price>2.98</price>
+	</product>
+	<product>
+		<name>Beef Jerky</name>
+		<category>Prepared food</category>
+		<price>22.51</price>
+	</product>
+		<product>
+		<name>Noodle soup</name>
+		<category>Prepared food</category>
+		<price>0.98</price>
+	</product>
+	<product>
+		<name>Eggs</name>
+		<category>Groceries</category>
+		<price>1.6</price>
+	</product>
+		<product>
+		<name>Bananas</name>
+		<category>Groceries</category>
+		<price>0.6</price>
+	</product>
+		</product>
+		<product>
+		<name>Cherry</name>
+		<category>Groceries</category>
+		<price>3.4</price>
+	</product>
 </products>
