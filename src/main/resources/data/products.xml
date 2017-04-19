@@ -1,97 +1,98 @@
 <products>	
 	<product>
 		<name>Jacket</name>
-		<category>Clothing</category>
+		<category>clothing</category>
 		<price>130</price>
 	</product>
 	<product>
 		<name>Suit Blazer</name>
-		<category>Clothing</category>
+		<category>clothing</category>
 		<price>63</price>
 	</product>
 	<product>
 		<name>Cardigan</name>
-		<category>Clothing</category>
+		<category>clothing</category>
 		<price>25</price>
 	</product>
 	<product>
 		<name>Dress</name>
-		<category>Clothing</category>
+		<category>clothing</category>
 		<price>49</price>
 	</product>
 	<product>
 		<name>Lisinopril</name>
-		<category>Prescription drug</category>
+		<category>prescriptiondrug</category>
 		<price>7.66</price>
 	</product>
 	<product>
 		<name>Hydrochlorothiazide</name>
-		<category>Prescription drug</category>
+		<category>prescriptiondrug</category>
 		<price>8.45</price>
 	</product>
 	<product>
 		<name>Azithromycin</name>
-		<category>Prescription drug</category>
+		<category>prescriptiondrug</category>
 		<price>9.89</price>
 	</product>
 	<product>
 		<name>Amoxicillin</name>
-		<category>Prescription drug</category>
+		<category>prescriptiondrug</category>
 		<price>5.65</price>
 	</product>
 	<product>
 		<name>Synthroid</name>
-		<category>Prescription drug</category>
+		<category>prescriptiondrug</category>
 		<price>37.99</price>
 	</product>
 	<product>
 		<name>Advil</name>
-		<category>Non-prescription drug</category>
+		<category>nonprescriptiondrug</category>
 		<price>8.98</price>
 	</product>
 	<product>
 		<name>Motrin</name>
-		<category>Non-prescription drug</category>
+		<category>nonprescriptiondrug</category>
 		<price>12.96</price>
 	</product>
 	<product>
 		<name>Aleve</name>
-		<category>Non-prescription drug</category>
+		<category>nonprescriptiondrug</category>
 		<price>14.92</price>
 	</product>
 	<product>
 		<name>Colace</name>
-		<category>Non-prescription drug</category>
+		<category>nonprescriptiondrug</category>
 		<price>13.97</price>
 	</product>
 	<product>
 		<name>Pizza</name>
-		<category>Prepared food</category>
+		<category>preparedfood</category>
 		<price>2.98</price>
 	</product>
 	<product>
 		<name>Beef Jerky</name>
-		<category>Prepared food</category>
+		<category>preparedfood</category>
 		<price>22.51</price>
 	</product>
 	<product>
 		<name>Noodle soup</name>
-		<category>Prepared food</category>
+		<category>preparedfood</category>
 		<price>0.98</price>
 	</product>
 	<product>
 		<name>Eggs</name>
-		<category>Groceries</category>
+		<category>groceries</category>
 		<price>1.6</price>
 	</product>
 	<product>
 		<name>Bananas</name>
-		<category>Groceries</category>
+		<category>groceries</category>
 		<price>0.6</price>
 	</product>
 	<product>
 		<name>Cherry</name>
-		<category>Groceries</category>
+		<category>groceries</category>
 		<price>3.4</price>
 	</product>
+</products>ct>
 </products>
