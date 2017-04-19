@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         System.out.println("Aplikacja v.1.0");
-        XmlReader xml = new XmlReader("C:\\Users\\student\\ZPI\\SalesTaxes\\src\\main\\resources\\data\\data.xml");
+        XmlReader xml = new XmlReader("./src/main/resources/data/data.xml");
         xml.read();
         NodeList states = xml.getStatesList();
         

@@ -7,7 +7,7 @@ public class State {
 	String name;
 	String basetax;
 	String maxsurtax;
-	Map<String, String> cattax;
+	public Map<String, String> cattax;
 	
 	public State(String name, String basetax, String maxsurtax){
 		this.name = name;
