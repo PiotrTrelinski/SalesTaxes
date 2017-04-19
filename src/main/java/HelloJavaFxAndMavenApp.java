@@ -14,7 +14,7 @@ public class HelloJavaFxAndMavenApp extends Application {
     public void start(Stage stage) throws Exception {
 
 
-        String fxmlFile = "/fxml/hello2.fxml";
+        String fxmlFile = "/fxml/hello.fxml";
         FXMLLoader loader = new FXMLLoader();
         Parent rootNode = (Parent) loader.load(getClass().getResourceAsStream(fxmlFile));
 
