@@ -6,7 +6,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelloController">
    <children>
-      <Button layoutX="412.0" layoutY="293.0" mnemonicParsing="false" text="Oblicz cene" />
+      <Button fx:id="button" layoutX="412.0" layoutY="293.0" mnemonicParsing="false" text="Oblicz cene" />
       <TextField layoutX="412.0" layoutY="85.0" promptText="Podaj rabat" />
       <Label layoutX="286.0" layoutY="192.0" text="Cena przed rabatem:" />
       <Label layoutX="307.0" layoutY="223.0" text="Cena po rabacie:" />
