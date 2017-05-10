@@ -13,6 +13,8 @@ public class Product {
 		this.price.set(price);
 	}
 	
+	public Product() {}
+	
 	public String getName() {
 		return name.get();
 	}
@@ -33,23 +35,5 @@ public class Product {
 	public void setPrice(String arg0) {
 		price.set(arg0);
 	}
-	public Product() {}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getCategory() {
-		return category;
-	}
-	public void setCategory(String category) {
-		this.category = category;
-	}
-	public String getPrice() {
-		return price;
-	}
-	public void setPrice(String price) {
-		this.price = price;
-	}
+
 }
