@@ -1,39 +1,52 @@
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import org.apache.commons.lang.StringUtils;
+import javafx.scene.control.ChoiceBox;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class HelloController
 {
 
-    @FXML private TextField firstNameField;
-    @FXML private TextField lastNameField;
-    @FXML private Label messageLabel;
+    @FXML ChoiceBox categoryList;
+    @FXML ChoiceBox productList;
+    @FXML ChoiceBox stateList;
 
-    public void sayHello() {
 
-        String firstName = firstNameField.getText();
-        String lastName = lastNameField.getText();
+    @FXML
+    public void initialize() {
 
-        StringBuilder builder = new StringBuilder();
-
-        if (!StringUtils.isEmpty(firstName)) {
-            builder.append(firstName);
-        }
-
-        if (!StringUtils.isEmpty(lastName)) {
-            if (builder.length() > 0) {
-                builder.append(" ");
-            }
-            builder.append(lastName);
-        }
-
-        if (builder.length() > 0) {
-            String name = builder.toString();
-            messageLabel.setText("Hello " + name);
-        } else {
-            messageLabel.setText("Hello mysterious person");
-        }
+        ArrayList<String> listWithCategories = new ArrayList<>();
+        listWithCategories.add("test1");
+        initializeCategoryList(listWithCategories);
+        System.out.println("second");
     }
 
+    private void initializeCategoryList(Collection collection) {
+
+        final ObservableList observableList = FXCollections.observableArrayList();
+
+        collection.forEach(item -> observableList.add(item));
+
+        categoryList.setItems(observableList);
+    }
+
+    private void initializeProductList(Collection collection) {
+
+        final ObservableList observableList = FXCollections.observableArrayList();
+
+        collection.forEach(item -> observableList.add(item));
+
+        productList.setItems(observableList);
+    }
+
+    private void initializeStateList(Collection collection) {
+
+        final ObservableList observableList = FXCollections.observableArrayList();
+
+        collection.forEach(item -> observableList.add(item));
+
+        stateList.setItems(observableList);
+    }
 }
