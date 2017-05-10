@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         System.out.println("Aplikacja v.1.0");
         XmlReader xml = new XmlReader("./src/main/resources/data/data.xml");
-        xml.read("sate");
+        xml.read("state");
         NodeList states = xml.getNodesList();
         
         for (int i = 0; i<states.getLength();i++) {
