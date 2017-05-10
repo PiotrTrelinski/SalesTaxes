@@ -11,16 +11,16 @@ public class State {
 	StringProperty maxsurtax;
 	public ObservableList<Category> cattax;
 	
-	public State(String name, String basetax, String maxsurtax){
+	public State(String name, String basetax, String maxsurtax, String[] catvals){
 		this.name.set(name);
 		this.basetax.set(basetax);
 		this.maxsurtax.set(maxsurtax);
 		cattax = FXCollections.observableArrayList();
-		cattax.add(new Category("groceries", ""));
-		cattax.add(new Category("preparedfood", ""));
-		cattax.add(new Category("prescriptiondrug", ""));
-		cattax.add(new Category("nonprescriptiondrug", ""));
-		cattax.add(new Category("clothing", ""));
+		cattax.add(new Category("groceries", catvals[0]));
+		cattax.add(new Category("preparedfood", catvals[1]));
+		cattax.add(new Category("prescriptiondrug", catvals[2]));
+		cattax.add(new Category("nonprescriptiondrug", catvals[3]));
+		cattax.add(new Category("clothing", catvals[4]));
 	}
 
 	public String getName() {
