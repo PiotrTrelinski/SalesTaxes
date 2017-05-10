@@ -1,5 +1,6 @@
 package objects;
 
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class Category {
@@ -9,8 +10,8 @@ public class Category {
 	StringProperty value;
 	public Category(String string, String string2) {
 		// TODO Auto-generated constructor stub
-		name.set(string);
-		value.set(string2);
+		name = new SimpleStringProperty(string);
+		value = new SimpleStringProperty(string2);
 	}
 	
 	

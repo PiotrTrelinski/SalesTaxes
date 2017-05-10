@@ -1,6 +1,7 @@
 package objects;
 
 import javafx.beans.property.ListProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,9 +13,9 @@ public class State {
 	public ObservableList<Category> cattax;
 	
 	public State(String name, String basetax, String maxsurtax, String[] catvals){
-		this.name.set(name);
-		this.basetax.set(basetax);
-		this.maxsurtax.set(maxsurtax);
+		this.name = new SimpleStringProperty(name);
+		this.basetax = new SimpleStringProperty(basetax);
+		this.maxsurtax = new SimpleStringProperty(maxsurtax);
 		cattax = FXCollections.observableArrayList();
 		cattax.add(new Category("groceries", catvals[0]));
 		cattax.add(new Category("preparedfood", catvals[1]));
