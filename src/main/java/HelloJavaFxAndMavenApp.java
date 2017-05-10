@@ -30,10 +30,10 @@ public class HelloJavaFxAndMavenApp extends Application {
         ArrayList productList = new ArrayList<Product>();
         for (int i = 0; i<products.getLength();i++) {
         	Product temp = new Product();
-        	temp.setName(products.item(i).getChildNodes().item(0).getTextContent());
-        	temp.setCategory(products.item(i).getChildNodes().item(1).getTextContent());
-        	temp.setPrice(products.item(i).getChildNodes().item(2).getTextContent());
-        	
+        	temp.setName(products.item(i).getChildNodes().item(1).getTextContent());
+        	temp.setCategory(products.item(i).getChildNodes().item(3).getTextContent());
+        	temp.setPrice(products.item(i).getChildNodes().item(5).getTextContent());
+        	System.out.println(temp.toString());
         	productList.add(temp);
 
         }
