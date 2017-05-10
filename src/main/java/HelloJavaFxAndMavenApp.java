@@ -4,6 +4,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import objects.Product;
+
+import java.util.ArrayList;
+
 import org.w3c.dom.NodeList;
 
 public class HelloJavaFxAndMavenApp extends Application {
@@ -23,10 +27,17 @@ public class HelloJavaFxAndMavenApp extends Application {
         XmlReader productXml = new XmlReader("src/main/resources/data/products.xml");
         productXml.read("product");
         NodeList products = productXml.getNodesList();
-        
+        ArrayList productList = new ArrayList<Product>();
         for (int i = 0; i<products.getLength();i++) {
-            System.out.println(products.item(i).getTextContent());
+        	Product temp = new Product();
+        	temp.setName(products.item(i).getChildNodes().item(0).getTextContent());
+        	temp.setCategory(products.item(i).getChildNodes().item(1).getTextContent());
+        	temp.setPrice(products.item(i).getChildNodes().item(2).getTextContent());
+        	
+        	productList.add(temp);
+
         }
+
 
         launch(args);
     }
