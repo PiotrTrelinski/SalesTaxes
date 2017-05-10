@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelloController">
+   <children>
+      <Button layoutX="412.0" layoutY="293.0" mnemonicParsing="false" text="Oblicz cene" />
+      <MenuButton layoutX="55.0" layoutY="110.0" mnemonicParsing="false" text="Kategoria">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Groceries" />
+          <MenuItem mnemonicParsing="false" text="Clothing" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="55.0" layoutY="175.0" mnemonicParsing="false" text="Produkt">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Produkt 1" />
+            <MenuItem mnemonicParsing="false" text="Produkt 2" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="55.0" layoutY="247.0" mnemonicParsing="false" text="Obszar sprzedaży">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Alaska" />
+            <MenuItem mnemonicParsing="false" text="Arizona" />
+         </items>
+      </MenuButton>
+      <TextField layoutX="412.0" layoutY="85.0" promptText="Podaj rabat" />
+      <Label layoutX="286.0" layoutY="192.0" text="Cena przed rabatem:" />
+      <Label layoutX="307.0" layoutY="223.0" text="Cena po rabacie:" />
+      <TextField editable="false" layoutX="412.0" layoutY="188.0" />
+      <TextField editable="false" layoutX="412.0" layoutY="219.0" />
+      <Label layoutX="309.0" layoutY="89.0" text="Wartosc rabatu:" />
+      <Separator layoutX="246.0" layoutY="35.0" orientation="VERTICAL" prefHeight="328.0" prefWidth="0.0" />
+      <Separator layoutX="275.0" layoutY="147.0" prefHeight="5.0" prefWidth="301.0" />
+      <ChoiceBox id="list1" layoutX="42.0" layoutY="60.0" prefWidth="150.0" />
+   </children>
+</Pane>
