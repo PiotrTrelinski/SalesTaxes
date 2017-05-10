@@ -1,5 +1,6 @@
 package objects;
 
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class Product {
@@ -8,9 +9,9 @@ public class Product {
 	StringProperty price;
 	
 	public Product(String name, String category, String price){
-		this.name.set(name);
-		this.category.set(category);
-		this.price.set(price);
+		this.name = new SimpleStringProperty(name);
+		this.category = new SimpleStringProperty(category);
+		this.price = new SimpleStringProperty(price);
 	}
 	
 	public Product() {}
