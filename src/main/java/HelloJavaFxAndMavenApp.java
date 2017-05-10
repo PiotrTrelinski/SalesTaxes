@@ -12,12 +12,20 @@ public class HelloJavaFxAndMavenApp extends Application {
     public static void main(String[] args) throws Exception {
 
         System.out.println("Aplikacja v.1.0");
-        XmlReader xml = new XmlReader("C:\\ZPI\\src\\main\\resources\\data\\data.xml");
-        xml.read();
-        NodeList states = xml.getStatesList();
+        XmlReader stateXml = new XmlReader("src/main/resources/data/data.xml");
+        stateXml.read("state");
+        NodeList states = stateXml.getNodesList();
 
         for (int i = 0; i<states.getLength();i++) {
             System.out.println(states.item(i).getTextContent());
+        }
+        
+        XmlReader productXml = new XmlReader("src/main/resources/data/products.xml");
+        productXml.read("product");
+        NodeList products = productXml.getNodesList();
+        
+        for (int i = 0; i<products.getLength();i++) {
+            System.out.println(products.item(i).getTextContent());
         }
 
         launch(args);

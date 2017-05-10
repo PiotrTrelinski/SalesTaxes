@@ -17,22 +17,25 @@ public class XmlReader {
 	private String fileName;
 	private NodeList statesList;
 	
-	public void read() throws Exception {
+	public void read(String tagName) throws Exception {
 		try {
 			File fXmlFile = new File(fileName);
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			doc = dBuilder.parse(fXmlFile);
 			doc.getDocumentElement().normalize();
-			statesList = doc.getElementsByTagName("state");
+			statesList = doc.getElementsByTagName(tagName);
 		}
 		catch (Exception e) {
 			e.printStackTrace();
 			throw e;
 		}
 	}
+	
+	
+	
 
-	public NodeList getStatesList() {
+	public NodeList getNodesList() {
 		return statesList;
 	}
 	
