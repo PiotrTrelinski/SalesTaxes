@@ -14,7 +14,12 @@ public class Product {
 		this.price = new SimpleStringProperty(price);
 	}
 	
-	public Product() {}
+	public Product() {
+		this.name = new SimpleStringProperty();
+		this.category = new SimpleStringProperty();
+		this.price = new SimpleStringProperty();
+		
+	}
 	
 	public String getName() {
 		return name.get();
