@@ -54,7 +54,7 @@ public class HelloController
         		else taxes[index] = cat.split("%")[0];
         		i++;
         	}
-        	statesList.Add(new State(name, basetax, maxsurtax, taxes));
+        	stateList.add(new State(name, basetax, maxsurtax, taxes));
         }
         return stateList;
     }
