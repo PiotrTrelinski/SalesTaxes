@@ -6,7 +6,6 @@ deploy:
   provider: releases
   api_key: "64ac31722eea3080a6e19dedd5330c56916e10cd"
   file_glob: true
-  file: "${RELEASE_PKG_FILE}"
   skip_cleanup: true
   on:
     tags: false
