@@ -4,7 +4,7 @@ jdk:
 script: "mvn clean test -B"
 deploy:
   provider: releases
-  api_key: "64ac31722eea3080a6e19dedd5330c56916e10cd"
+  api_key: "b6486f3249d4190b3091b4b367ee0b1353ace3ab"
   file_glob: true
   skip_cleanup: true
   on:
