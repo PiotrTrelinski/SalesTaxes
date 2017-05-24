@@ -24,7 +24,7 @@ public class HelloJavaFxAndMavenApp extends Application {
             System.out.println(states.item(i).getTextContent());
         }
         
-        XmlReader productXml = new XmlReader("src/main/resources/data/products.xml");
+        /*XmlReader productXml = new XmlReader("src/main/resources/data/products.xml");
         productXml.read("product");
         NodeList products = productXml.getNodesList();
         ArrayList productList = new ArrayList<Product>();
@@ -36,7 +36,7 @@ public class HelloJavaFxAndMavenApp extends Application {
         	System.out.println(temp.toString());
         	productList.add(temp);
 
-        }
+        }*/
 
 
         launch(args);
