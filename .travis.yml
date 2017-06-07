@@ -4,7 +4,7 @@ jdk:
 script: "mvn clean test -B"
 deploy:
   provider: releases
-  api_key: $GITHUB_OAUTH_TOKEN
+  api_key: "3f76232e955ae1fdb0b9e3b7808ea70f1cb1b8da"
   skip_cleanup: true
   on:
     tags: false
