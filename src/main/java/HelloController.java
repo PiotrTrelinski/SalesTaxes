@@ -119,7 +119,7 @@ public class HelloController
 				
 				List<Product>filteredList = new ArrayList();
 				
-				filteredList.forEach();
+				//filteredList.forEach();
 				
 				 initializeProductList(filteredList);
 				
