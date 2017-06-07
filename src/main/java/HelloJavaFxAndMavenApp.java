@@ -20,9 +20,6 @@ public class HelloJavaFxAndMavenApp extends Application {
         stateXml.read("state");
         NodeList states = stateXml.getNodesList();
 
-        for (int i = 0; i<states.getLength();i++) {
-            System.out.println(states.item(i).getTextContent());
-        }
         
         /*XmlReader productXml = new XmlReader("src/main/resources/data/products.xml");
         productXml.read("product");

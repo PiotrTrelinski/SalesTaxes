@@ -29,6 +29,8 @@ public class HelloController
     @FXML Button button;
     
     List<Product> productArrayList;
+    List<String> badCategoryList;
+    List<State> stateArrayList;
 
 
     @FXML
@@ -36,11 +38,11 @@ public class HelloController
 
     	
     	productArrayList = fillProductList();
-
     	
+    	stateArrayList=fillStateList();
+    	initializeStateList(stateArrayList);
         initializeCategoryList();
         initializeProductList(productArrayList);
-        System.out.println("second");
         button.setOnMouseClicked(event -> buttonClickedFunciton());
     }
 
@@ -49,6 +51,7 @@ public class HelloController
     	XmlReader xml = new XmlReader("./src/main/resources/data/data.xml");
         xml.read("state");
         NodeList states = xml.getNodesList();
+        System.out.println(states.getLength());
         for (int i = 0; i<states.getLength();i++) {
         	String name = states.item(i).getChildNodes().item(1).getTextContent();
         	String basetax = states.item(i).getChildNodes().item(3).getTextContent();
@@ -61,10 +64,11 @@ public class HelloController
         		else if(cat.equals("exempt")) taxes[index] = "0";
         		else if(cat.equals("general")) taxes[index] = basetax;
         		else taxes[index] = cat.split("%")[0];
-        		i++;
+        		
         	}
         	stateList.add(new State(name, basetax, maxsurtax, taxes));
         }
+        
         return stateList;
     }
     
@@ -79,7 +83,6 @@ public class HelloController
         	temp.setName(products.item(i).getChildNodes().item(1).getTextContent());
         	temp.setCategory(products.item(i).getChildNodes().item(3).getTextContent());
         	temp.setPrice(products.item(i).getChildNodes().item(5).getTextContent());
-        	System.out.println(temp.getName());
         	productList.add(temp);
 
         }
@@ -91,16 +94,22 @@ public class HelloController
     
     
     
-    
     private void initializeCategoryList() {
 
         final ObservableList observableList = FXCollections.observableArrayList();
         ArrayList<String> listWithCategories = new ArrayList<>();
-        listWithCategories.add("groceries");
-        listWithCategories.add("preparedfood");
-        listWithCategories.add("prescriptiondrug");
-        listWithCategories.add("nonprescriptiondrug");
-        listWithCategories.add("clothing");
+        badCategoryList = new  ArrayList<>();
+        listWithCategories.add("Groceries");
+        listWithCategories.add("Prepared food");
+        listWithCategories.add("Prescription drug");
+        listWithCategories.add("Non-prescription drug");
+        listWithCategories.add("Clothing");
+        badCategoryList.add("groceries");
+        badCategoryList.add("preparedfood");
+        badCategoryList.add("prescriptiondrug");
+        badCategoryList.add("nonprescriptiondrug");
+        badCategoryList.add("clothing");
+        
 
         listWithCategories.forEach(item -> observableList.add(item));
 
@@ -115,19 +124,15 @@ public class HelloController
 
 			private void buildProductdependOnCategory(Number newValue) {
 				// TODO Auto-generated method stub
-				System.out.println(observableList.get((int) newValue));
 				
 				List<Product>filteredList = new ArrayList();
 				
 				for (Product product : productArrayList) {
-					if(product.getCategory().equals(observableList.get((int) newValue))){
+					if(product.getCategory().equals(badCategoryList.get((int) newValue))){
 						filteredList.add(product);
 					}
 				}
-			
-				
 				 initializeProductList(filteredList);
-				
 			}
         	
 		});
@@ -141,11 +146,11 @@ public class HelloController
         productList.setItems(observableList);
     }
 
-    private void initializeStateList(Collection collection) {
+    private void initializeStateList(List<State> stateArrayList2) {
 
         final ObservableList observableList = FXCollections.observableArrayList();
 
-        collection.forEach(item -> observableList.add(item));
+        stateArrayList2.forEach(item -> observableList.add( item.getName() ) );
 
         stateList.setItems(observableList);
     }

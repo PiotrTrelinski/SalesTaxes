@@ -16,8 +16,5 @@ public class Main {
         xml.read("state");
         NodeList states = xml.getNodesList();
         
-        for (int i = 0; i<states.getLength();i++) {
-        	System.out.println(states.item(i).getTextContent());
-        }
     }
 }
