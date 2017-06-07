@@ -27,6 +27,7 @@ public class HelloController
     @FXML ChoiceBox productList;
     @FXML ChoiceBox stateList;
     @FXML Button button;
+    //@FXML TextField priceLabel;
     
     List<Product> productArrayList;
     List<String> badCategoryList;
@@ -144,6 +145,34 @@ public class HelloController
         collection.forEach(item -> observableList.add(item.getName()));
 
         productList.setItems(observableList);
+        
+        
+        productList.getSelectionModel().selectedIndexProperty().addListener( new ChangeListener<Number>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+				// TODO Auto-generated method stub
+				setPrice(newValue);
+			}
+
+			private void setPrice(Number newValue) {
+				// TODO Auto-generated method stub
+				
+				System.out.println((productList.getItems().get((int) newValue)));
+				for (Product product : productArrayList) {
+					if(product.getName().equals(productList.getItems().get((int) newValue))){
+						//priceLabel.setText(product.getPrice());
+						System.out.println(product.getPrice());
+						
+					}
+				}
+				
+			}
+        	
+		});
+        
+        
+        
     }
 
     private void initializeStateList(List<State> stateArrayList2) {
