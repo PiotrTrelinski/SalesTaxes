@@ -97,9 +97,9 @@ public class HelloController
         final ObservableList observableList = FXCollections.observableArrayList();
         ArrayList<String> listWithCategories = new ArrayList<>();
         listWithCategories.add("groceries");
-        listWithCategories.add("prepared food");
-        listWithCategories.add("prescription drug");
-        listWithCategories.add("non-prescription drug");
+        listWithCategories.add("preparedfood");
+        listWithCategories.add("prescriptiondrug");
+        listWithCategories.add("nonprescriptiondrug");
         listWithCategories.add("clothing");
 
         listWithCategories.forEach(item -> observableList.add(item));
@@ -119,7 +119,12 @@ public class HelloController
 				
 				List<Product>filteredList = new ArrayList();
 				
-				//filteredList.forEach();
+				for (Product product : productArrayList) {
+					if(product.getCategory().equals(observableList.get((int) newValue))){
+						filteredList.add(product);
+					}
+				}
+			
 				
 				 initializeProductList(filteredList);
 				
