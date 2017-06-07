@@ -10,5 +10,6 @@ deploy:
 
   file: "/home/travis/build/PiotrTrelinski/SalesTaxes/target/jfx/app/*.jar"
   file_glob: true
+  tags: false
   on:
     repo: PiotrTrelinski/SalesTaxes
