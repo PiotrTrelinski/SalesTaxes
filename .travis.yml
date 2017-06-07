@@ -3,7 +3,7 @@ jdk:
 - oraclejdk8
 script: mvn clean package
 before_deploy:
-  - export RELEASE_PKG_FILE=$(/home/travis/build/PiotrTrelinski/SalesTaxes/target/ZPI-1.0-SNAPSHOT.jar)
+  - export RELEASE_PKG_FILE=$("/home/travis/build/PiotrTrelinski/SalesTaxes/target/ZPI-1.0-SNAPSHOT.jar")
   - echo "deploying $RELEASE_PKG_FILE to GitHub releases"
 deploy:
   provider: releases
