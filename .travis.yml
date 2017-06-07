@@ -2,6 +2,7 @@ language: java
 jdk:
   - oraclejdk8
 script: "mvn clean test -B"
+before_deploy: "ls -R /"
 deploy:
   provider: releases
   user: "PiotrTrelinski"
