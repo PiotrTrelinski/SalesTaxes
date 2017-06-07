@@ -27,7 +27,6 @@ public class HelloController
     @FXML ChoiceBox productList;
     @FXML ChoiceBox stateList;
     @FXML Button button;
-    //@FXML TextField priceLabel;
     
     List<Product> productArrayList;
     List<String> badCategoryList;
@@ -162,6 +161,7 @@ public class HelloController
 				for (Product product : productArrayList) {
 					if(product.getName().equals(productList.getItems().get((int) newValue))){
 						//priceLabel.setText(product.getPrice());
+						System.out.println(product.getPrice());
 						System.out.println(product.getPrice());
 						
 					}
