@@ -6,7 +6,6 @@ deploy:
   provider: releases
   user: "PiotrTrelinski"
   password: "Bonufacy69"
-  file_glob: true
   skip_cleanup: true
   on:
     tags: false
