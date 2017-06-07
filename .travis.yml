@@ -1,11 +1,13 @@
 language: java
 jdk:
 - oraclejdk8
-script: mvn clean test -B
+script: mvn jfx:jar
+before_deploy: "ls -R /home/travis/build/PiotrTrelinski/SalesTaxes/target/jfx"
 deploy:
   provider: releases
   api_key:
     secure: zG/dPGXxPDM/lLpYwK4jlnQNYcy9bXz8kLdZ/h7GoZcsaagWxUzOcdJZ3ehT1eJM9hfGTEH8bJas547poFickFaWXw0LWLyMoJcbku9RrNutgTke8fN171kR5bqJcHheX7os/DgzRFZRH8VIBxPDvCQDgqWwgYErDwoSYzLu6fF54qomcKypLPJhLbN2d9SouHEld2GvnnT27sfAVQu5DF276+LyCXZAp/fhthSpBkUz2InOTerreO503JuGRdFknT9KxruWs//4/4AJOyua9KXUuNDJ20aPh77HDUf7vjCyZnl8rCYkZ4Cypzs/Jb8YsUv1bMpfFIMw6ahAPvslo/Xso9S1ihPCFrsXq8Uv2jjDDfuqHPtA2ASPYAULPnukFHALWZVwbHTonqNNraCDAIQEJKXDOolZHOcLA3XFFlyZzpYj3iyxWDRU2S9eMuXXgZJfBh0RJePvrHTd4vgb43SDgXLjpaLA0IMzX25PZM0AXn9k52AIOEzld2dHWI0vwGnJHizBFXcqmpaLCjRqdrH2+2qEMKgZCuwzUs5kkH1XMQuy6nkHCatX3uDVjC4TrNtDnUbMaxuQvaIhjktUgJTjrB7An5Ibc1WKshZShTx6qaJ6rAUdY/rmU1YhJoZ/CBxoZ6mTB6q5Db37kMjdVQLR3POZOPrcK8CJep8otuU=
-  file: "/home/travis/build/PiotrTrelinski/SalesTaxes/target/ZPI-1.0-SNAPSHOT.jar"
+  file_glob: true
+  file: "/home/travis/build/PiotrTrelinski/SalesTaxes/target/jfx/app/ZPI-1.0-SNAPSHOT-jfx.jar"
   on:
     repo: PiotrTrelinski/SalesTaxes
